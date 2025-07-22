@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+.jagged-text {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+/* Bounce Animation */
+.bounce {
+  animation: bounceText 1.5s infinite ease-in-out;
+}
+
+/* Jagged line - top */
+.jagged-text::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff1493);
+  clip-path: polygon(0 0, 10% 100%, 20% 0, 30% 100%, 40% 0, 50% 100%, 60% 0, 70% 100%, 80% 0, 90% 100%, 100% 0);
+  animation: jaggedSlide 3s infinite ease-in-out;
+}
+
+/* Jagged line - bottom */
+.jagged-text::after {
+  content: '';
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff1493, #00ffff);
+  clip-path: polygon(0 0, 10% 100%, 20% 0, 30% 100%, 40% 0, 50% 100%, 60% 0, 70% 100%, 80% 0, 90% 100%, 100% 0);
+  animation: jaggedSlideReverse 3s infinite ease-in-out;
+}
+
+/* Bounce animation keyframes */
+@keyframes bounceText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Jagged line animations */
+@keyframes jaggedSlide {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(10%); }
+  100% { transform: translateX(-10%); }
+}
+
+@keyframes jaggedSlideReverse {
+  0% { transform: translateX(10%); }
+  50% { transform: translateX(-10%); }
+  100% { transform: translateX(10%); }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+.jagged-text {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.bounce {
+  animation: bounceText 1.5s infinite ease-in-out;
+}
+
+.jagged-text::before,
+.jagged-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff1493);
+  clip-path: polygon(0 0, 10% 100%, 20% 0, 30% 100%, 40% 0, 50% 100%, 60% 0, 70% 100%, 80% 0, 90% 100%, 100% 0);
+  animation: jaggedSlide 3s infinite ease-in-out;
+}
+
+.jagged-text::after {
+  bottom: 30%;
+  background: linear-gradient(to right, #ff1493, #00ffff);
+  animation: jaggedSlideReverse 3s infinite ease-in-out;
+}
+
+.jagged-text::before {
+  top: 30%;
+}
+
+@keyframes bounceText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  75% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes jaggedSlide {
+  0% {
+    transform: translateX(-10%);
+  }
+
+  50% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes jaggedSlideReverse {
+  0% {
+    transform: translateX(10%);
+  }
+
+  50% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-4px);
+  }
+
+  40% {
+    transform: translateX(4px);
+  }
+
+  60% {
+    transform: translateX(-4px);
+  }
+
+  80% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+.floating-emoji {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+  }
+
+  .btn-get-started {
+    background-color: #00c4ff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+
+.btn-get-started:hover {
+  animation: shake 0.4s infinite;
+}
+
+.emoji-trail {
+  position: fixed;
+  font-size: 1.2rem;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 1;
+  animation: trailFade 1s forwards;
+  user-select: none;
+}
+
+@keyframes trailFade {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+  </style>
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">My Journey</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Rowland-CV.pdf"target="_blank" class="btn btn-primary" style="color: white; padding: 6px 12px; border-radius: 6px;">
+            Download CV
+            </a>
+          </li>
+        </ul>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/hero-bg3.jpg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            
+            <h2 class="jagged-text bounce">"The Lord Is My Sherperd I Shall Not Want"</h2>
+           
+
+            <br>
+            <p id="cycling-text" class="text-light bg-dark px-4 py-2 rounded-pill d-inline-block shadow-sm" style="font-size: 1rem; font-style: italic; opacity: 1; transition: opacity 0.8s ease;">
+              Just a humble little static portfolio site... 
+              nothing fancy, no fireworks — If it loads, consider it a success lol!".
+            </p>
+            <br>
+          
+            
+           <div class="btn-container">
+            <a href="about.html" class="btn-get-started">About Me</a>
+          </div>
+        
+          <span class="floating-emoji" id="emoji">😢</span>
+        
+          
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+    <script>
+      const emoji = document.getElementById('emoji');
+      const button = document.querySelector('.btn-get-started');
+      const hoverSound = new Audio('audio/audio.mp3');
+    
+      let isPlaying = false; // To prevent rapid replay
+    
+      document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+    
+        // Move emoji relative to viewport
+        emoji.style.left = `${mouseX + 2}px`;
+        emoji.style.top = `${mouseY - 300}px`;
+    
+        // Get button center relative to viewport
+        const rect = button.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+    
+        // Distance between mouse and button
+        const distance = Math.hypot(mouseX - centerX, mouseY - centerY);
+    
+        if (distance < 120) {
+          emoji.textContent = '😊';
+          emoji.style.opacity = 1;
+    
+          if (!isPlaying) {
+            hoverSound.currentTime = 0; // rewind if needed
+            hoverSound.play().catch(() => {}); // prevents errors if interrupted
+            isPlaying = true;
+            setTimeout(() => isPlaying = false, 1000); // allow replay after 1s
+          }
+        } else {
+          emoji.textContent = '😢';
+          emoji.style.opacity = 0;
+        }
+      });
+    </script>
+    
+    <script>
+      (function(){
+        const texts = [
+          `Just a humble little static portfolio site... nothing fancy, no fireworks — If it loads, consider it a success lol!`,
+          `Here lies a portfolio that’s less ‘cutting-edge’ and more ‘slightly-edgy.’ Built with enthusiasm, stubbornness, and absolutely no shame for its simplicity, "Designed for desktop but somehow made it to your mobile screen. It may look squished, stretched, or outright confused — but hey, at least it’s there."`,
+          `This site contains traces of bad decisions, forgotten comments, and a few ‘temporary fixes’ that became permanent. Welcome to the authentic dev experience.`,
+          `If you spot a bug, it’s not a mistake — it’s a feature! Consider this an interactive puzzle designed to keep you engaged and mildly frustrated.`,
+          `Behind this simple site lies a developer who is definitely capable of more, but also very much distracted by cat videos and snack breaks.`,
+          `Welcome to my portfolio, where the code is as stable as my sleep schedule and twice as unpredictable.`,
+          `This site is a relic from a forgotten era when HTML was king and CSS was still figuring itself out.`,
+          `Warning: Prolonged exposure to this site may cause nostalgia, confusion, and sudden urges to check LinkedIn.`,
+          `Welcome to the digital equivalent of a home-cooked meal: sometimes burnt, occasionally delicious.`,
+          `Caution: This site contains traces of sarcasm, dry humor, and the faint scent of desperation.`,
+          `Designed to run on the tears of frustrated developers and the laughter of confused visitors.`
+        ];
+    
+        const p = document.getElementById('cycling-text');
+        let currentIndex = -1;
+    
+        function getRandomIndex() {
+          let index;
+          do {
+            index = Math.floor(Math.random() * texts.length);
+          } while(index === currentIndex); // avoid repeating same text twice in a row
+          return index;
+        }
+    
+        function cycleText() {
+          p.style.opacity = 0;  // start fade out
+          setTimeout(() => {
+            currentIndex = getRandomIndex();
+            p.textContent = texts[currentIndex];
+            p.style.opacity = 1; // fade in new text
+          }, 800); // match CSS transition duration (0.8s)
+        }
+    
+        // Start cycling every 3 seconds (including transition time)
+        setInterval(cycleText, 6000);
+    
+      })();
+    </script>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename"></strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+      
+        "Built with love, duct tape, and whatever was left in the developer's brain at 3AM."
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
