@@ -34,6 +34,53 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    @keyframes heavyBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+  }
+  
+  .mischievous-icon {
+    position: relative;
+    font-size: 2.5rem;
+    color: #ff4081;
+    animation: heavyBounce 0.6s infinite;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    z-index: 10;
+    /* Make sure it can contain absolute confetti pieces */
+    overflow: visible;
+  }
+  
+  .confetti-piece {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: confettiFall linear forwards;
+  }
+  
+  @keyframes confettiFall {
+    0% {
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(60px) rotate(360deg);
+    }
+  }
+  
+  
+    </style>
 </head>
 
 <body class="portfolio-page">
@@ -64,7 +111,7 @@
           </li>
         </ul>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list mischievous-icon"></i>
       </nav>
 
       <div class="header-social-links">
@@ -298,7 +345,39 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    const icon = document.querySelector('.mischievous-icon');
+    
+    function createConfettiPiece() {
+      const confetti = document.createElement('span');
+      confetti.classList.add('confetti-piece');
+    
+      // Random size
+      const size = Math.random() * 6 + 4;
+      confetti.style.width = `${size}px`;
+      confetti.style.height = `${size}px`;
+    
+      // Random color
+      confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    
+      // Position inside icon width (~40px wide, adjust if needed)
+      confetti.style.left = `${Math.random() * icon.clientWidth}px`;
+    
+      // Random animation duration
+      confetti.style.animationDuration = `${Math.random() * 1 + 1}s`;
+    
+      // Append confetti inside the icon
+      icon.appendChild(confetti);
+    
+      // Remove after animation finishes
+      setTimeout(() => {
+        confetti.remove();
+      }, 2000);
+    }
+    
+    // Spawn confetti every 150ms
+    setInterval(createConfettiPiece, 150);
+    </script>
 </body>
 
 </html>
